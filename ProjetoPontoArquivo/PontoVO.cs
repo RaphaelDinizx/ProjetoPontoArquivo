@@ -16,6 +16,7 @@ namespace modelo
 
         public PontoVO()
         {
+            //comentario
         }
 
         public PontoVO(int codigo)
