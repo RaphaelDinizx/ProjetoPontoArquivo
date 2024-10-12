@@ -54,6 +54,27 @@ namespace visao
                 Console.WriteLine(objeto);
             }
 
+
+            PlanoCartesianoDAO dao = new PlanoCartesianoDAO();
+
+            // Inserir um novo ponto
+            PontoVO novoPonto = new PontoVO(6, 1, "Novo Ponto", 10.5, -5.3);
+            dao.inserir(novoPonto);
+
+            // Pesquisar um ponto
+            PontoVO pontoPesquisado = dao.pesquisar(new PontoVO(6));
+            Console.WriteLine("Ponto Pesquisado: " + pontoPesquisado);
+
+            // Alterar um ponto
+            pontoPesquisado.Descricao = "Ponto Alterado";
+            dao.alterar(pontoPesquisado);
+
+            // Excluir um ponto
+            dao.excluir(new PontoVO(6));
+
+            Console.WriteLine("Operações concluídas.");
+
+
             Console.WriteLine("Fim do Main");
         }
     }

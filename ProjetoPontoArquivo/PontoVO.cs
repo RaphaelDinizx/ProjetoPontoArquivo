@@ -48,7 +48,7 @@ namespace modelo
 
         public override string ToString()
         {
-            return "Código: " + Codigo + "  // descricao: " + Descricao;
+            return $"Código: {Codigo}, Descrição: {Descricao}, X: {X}, Y: {Y}, TipoFigura: {TipoFigura}";
         }
     }
 }

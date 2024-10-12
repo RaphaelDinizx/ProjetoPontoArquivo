@@ -71,7 +71,7 @@ namespace controle
 
             for (int i = 0; i < lista.Count; i++)
             {
-                PontoVO objeto = (PontoVO) lista[i];
+                PontoVO objeto = (PontoVO)lista[i];
 
                 double resultado = objeto.X * objeto.Y;
                 if (resultado > 0)
@@ -123,5 +123,6 @@ namespace controle
 
             return pontosSelecionados;
 
+        }
     }
 }
